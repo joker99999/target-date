@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  .top {
+    height: 100px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__day {
+      color: #ffffff;
+      font-size: 80px;
+    }
+  }
+  .box {
+    display: flex;
+    .side {
+      height: calc(100vh - 100px);
+      width: 300px;
+      background-color: gray;
+      &__name {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &--user {
+          color: #ffffff;
+          font-size: 30px;
+        }
+      }  
+      &__member {
+        color: black;
+        font-size: 20px;
+        height: 25px;
+      }   
+      &__memberbox--name {
+        font-size: 30px;
+        margin-top: 35px;
+        margin-left: 100px;
+      }
+       
+      
+    }
+    .main {
+      height: calc(100vh - 100px);
+      width: calc(100vw - 300px);
+      background-color:lightgray;
+      display: flex;
+      
+        &__name {
+          font-size: 50px;
+          margin-left: 30px;
+          margin-top: 50px;
+        }
+        &__text {
+          font-size: 35px;
+          margin-left: 60px;
+        }
+        &__date {
+          font-size: 50px;
+          margin-left: 60px;
+          margin-top: 50px;
+        }
+        
+      }
+    }
+  
+}
