@@ -1,0 +1,10 @@
+.top
+  .target
+    %h2 今日の目標設定 
+-# = form_for @task do |form|
+-#   = form.text_field :text
+-#   = form.submit
+= form_with(model: @task, local: true) do |form|
+  = form.text_field :text, class: 'input-text'
+  = form.submit '投稿する', class: 'submit-btn'
+= link_to 'TOPページに戻る', root_path

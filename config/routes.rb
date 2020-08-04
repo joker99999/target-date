@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   # devise_for :installs
-  # resources :users 
+  resources :users 
   resources :tasks
-  get 'messages/index'
+  # get 'messages/index'
   root "messages#index"
 end

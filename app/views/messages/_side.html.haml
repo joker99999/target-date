@@ -1,9 +1,13 @@
 .side
   .side__name
     .side__name--user
-      masao
-      %link(rel="stylesheet" href="")/
+      = link_to new_task_path, class: 'name' do 
+        - current_user.username
   .side__member
     member:
   .side__memberbox--name
     satoshi
+  .side__memberbox--name
+    takeshi
+  .side__memberbox--name
+    atsushi

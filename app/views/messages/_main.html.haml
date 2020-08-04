@@ -1,10 +1,25 @@
 .main
-  .main__name
-    atushi
-  .main__text
-    目標
-    %ul
-      %li ・時間割通りに進めていく
-      %li ・最低何分集中する
-  .main__date
-    2020/07/26
+  .contents
+    - @tasks.each do |task|
+      .contenttext
+        = task.text
+    -# .deretebtn
+    -#   = link_to '削除', tasks_path, method: :delete
+  -# .main__name
+  -#   atushi
+  -# .main__text
+  -#   目標
+  -#   %ul
+  -#     %li ・時間割通りに進めていく
+  -#     %li ・最低何分集中する
+  -# .main__date
+  -#   2020/07/26
+  -# .main__name
+  -#   takeshi
+  -# .main__text
+  -#   目標
+  -#   %ul
+  -#     %li ・遅刻せず仕事の時間は集中する
+  -#     %li ・メリハリをつけて作業する
+  -# .main__date
+  -#   2020/07/26
