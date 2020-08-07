@@ -7,4 +7,7 @@
 = form_with(model: @task, local: true) do |form|
   = form.text_field :text, class: 'input-text'
   = form.submit '投稿する', class: 'submit-btn'
-= link_to 'TOPページに戻る', root_path
+.toppage
+  = link_to '投稿編集', task_path
+.toppage1
+  = link_to 'TOPページに戻る', root_path

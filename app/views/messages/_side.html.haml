@@ -5,9 +5,16 @@
         - current_user.username
   .side__member
     member:
-  .side__memberbox--name
-    satoshi
-  .side__memberbox--name
-    takeshi
-  .side__memberbox--name
-    atsushi
+  .user
+    - @users.each do |user|
+      .user__name
+        = link_to '/users/:id', class: 'member' do 
+          -user.username
+          
+        -# = link_to new_task_path, class: 'member' do 
+  -# .side__memberbox--name
+  -#   -@users
+  -# .side__memberbox--name
+  -#   takeshi
+  -# .side__memberbox--name
+  -#   atsushi

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index 
-    @tasks = Task.all
+    @users = User.all
   end
   
   def new
@@ -13,6 +13,10 @@ class UsersController < ApplicationController
 
   def show
     # @user = User.find(session[:user_id])
+  end
+
+  def edit
+
   end
 
   
