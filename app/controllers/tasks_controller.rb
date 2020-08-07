@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
   
   def index
-    @tasks = Task.all
+    # @tasks = Task.all
   end
 
   def new
@@ -15,6 +15,10 @@ class TasksController < ApplicationController
     else 
       render new_task_path
     end
+  end
+
+  def edit
+    @task = Task(:id)
   end
 
   private
